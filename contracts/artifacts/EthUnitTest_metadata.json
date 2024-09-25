@@ -1,0 +1,103 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "param",
+						"type": "uint256"
+					}
+				],
+				"name": "testEther",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "param",
+						"type": "uint256"
+					}
+				],
+				"name": "testGwei",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "param",
+						"type": "uint256"
+					}
+				],
+				"name": "testWei",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/EthUnitTest.sol": "EthUnitTest"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/EthUnitTest.sol": {
+			"keccak256": "0x4e5d9816c70817943dd441c6e85370d54d2a5df4ce63b6c5d8fa0bbf1830e283",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d04e03c1dc62d3ad90de0eba2a8ca916c08a6963113ea6c04bf2ae6d18bbd4da",
+				"dweb:/ipfs/QmPZhecAvJ4zJJfkREkVcpyCaToUJygtAC3YY9GPdckkW4"
+			]
+		}
+	},
+	"version": 1
+}
