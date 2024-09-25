@@ -6,7 +6,7 @@ import { deploy } from './ethers-lib'
 
 (async () => {
   try {
-    const result = await deploy('@P5/InterfaceTest', [])
+    const result = await deploy('./InterfaceTest', [])
     console.log(`address: ${result.address}`)
   } catch (e) {
     console.log(e.message)
