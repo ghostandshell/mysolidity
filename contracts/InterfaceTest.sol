@@ -11,10 +11,19 @@ import "hardhat/console.sol";
 contract InterfaceTest {
     function doTest(address _address) public pure  {
         AnimalMove am = AnimalMove(_address);
-        am.eat();
+        string memory ret;
+        ret = am.eat();
+        console.log(ret);
+        ret = am.run();
+        console.log(ret);
+    }
+    function getInterfaceId() public pure returns(bytes4) {
+        return type(AnimalMove).interfaceId;
+    }
+    function useLibrary() external   pure{
+        Set.test();
     }
 }
-
 /**
  * @title AnimalMove
  * @dev AnimalMove
@@ -24,6 +33,18 @@ interface AnimalMove{
     function eat() external pure returns(string memory);
 
     function run() external pure returns(string memory);
+}
+
+library Set {
+    struct Data{
+        mapping (uint => bool) flags;
+    }
+    
+    function test() external pure{
+        console.log("Set.test");
+
+    }
+
 }
 
 /**
@@ -36,13 +57,25 @@ contract Dog {
     function eat() public view returns(string memory) {
         string memory _animalName = this.animalName();
         string memory ret = string(abi.encodePacked(_animalName, " can eat"));
-        console.log(ret);
         return ret;
     }
     function run() public view returns(string memory) {
         string memory _animalName = this.animalName();
         string memory ret = string(abi.encodePacked(_animalName, " can run"));
-        console.log(ret);
+        return ret;
+    }
+}
+
+contract Cat {
+    string public animalName = "Cats";
+    function eat() public view returns(string memory) {
+        string memory _animalName = this.animalName();
+        string memory ret = string(abi.encodePacked(_animalName, " can eat"));
+        return ret;
+    }
+    function run() public view returns(string memory) {
+        string memory _animalName = this.animalName();
+        string memory ret = string(abi.encodePacked(_animalName, " can run"));
         return ret;
     }
 }
