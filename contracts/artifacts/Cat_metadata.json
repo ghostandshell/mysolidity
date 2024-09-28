@@ -1,0 +1,144 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "eventFallback",
+				"type": "event"
+			},
+			{
+				"stateMutability": "nonpayable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "param",
+						"type": "uint256"
+					}
+				],
+				"name": "run",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "run",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "定义了一个接口AnimalMove，以及其实现Cat类，AnimalMove定义了eat方法，而Cat没有eat方法。 在AnimalStart强行调用传入地址的eat方法，当使用Call的方式调用时，会绕过检查，并调用Cat的callback方法 ",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/PayableTest.sol": "Cat"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/PayableTest.sol": {
+			"keccak256": "0x3f5a9843bff10cbfb13ad8e0413b735c9b9546c5517b7222c068bb581b724b95",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b07cf3b4ba4ff71560115b1dc3fbc58722502a7f78cf75d6badd6a3af4c44261",
+				"dweb:/ipfs/Qmboha948JbWnMuUvkeNcujkEY26uJSbXA45c4NR4876xA"
+			]
+		},
+		"hardhat/console.sol": {
+			"keccak256": "0xf2560b5386574153057104d19a9e68a32ee912cf23c0c8df1fe9a0607f42d543",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a63166e036b040826baa513772451a79925daa304b38749100efb089ac07cdc2",
+				"dweb:/ipfs/QmUtMTxUFKU6a5oFXsEJnTPvb3QPb7GDDmSv5yZ1jFHDwR"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/Panic.sol": {
+			"keccak256": "0x6416b5091038f145c3a953919d22b69b7fd13798ecf9e5a018e76b396aacd527",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://66a473c785da3b768b336f00660e82416885105b94e81582117000c7de2db862",
+				"dweb:/ipfs/QmWEyv2BEV2jguVBhGpN6gqghVxN8Fvwyn9vCtruW3gLcz"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/Strings.sol": {
+			"keccak256": "0xca3b393fc1c04a4411d3776adb9763a8780f6fb04b618f2807faa5f295ef19d2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://597006f69dd3711b302e2cf4fea2ee0f3b016a9c609dc05d2aac541911503440",
+				"dweb:/ipfs/QmUHZnXu6tTDKqaSNWU4iwyovyL7fXTrZrabu7ijnHNUJG"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/math/Math.sol": {
+			"keccak256": "0xd2fb25b789ccaf6bf50b147ecff4c9d62d05d3f5c5d562fdf568f6926a2a280c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://521e2df6ed2080c9ae2f442b27a827551ab96ff2e5f920ad6dc978c355b4b966",
+				"dweb:/ipfs/Qme1Z6dU7ZDQMfKiHwpLejAyFGsP9HpijvX9uzxivEGjga"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/math/SafeCast.sol": {
+			"keccak256": "0x8cdcfbd2484c2e7db797f57ff8731fe11d7ab0092c7a1112f8ad6047ad6d4481",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://356742c148ca77b9d953059072c32cf9d0d98ae782129fe442c73a6736bfd7cb",
+				"dweb:/ipfs/QmZN5jdoBbCihsv1RK8n6pf6cC89pi77KGAasn7ZvyuNTn"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/math/SignedMath.sol": {
+			"keccak256": "0xb569f4a67508470689fe1152c382b20c9332039fe80ff5953b1dba5bcdca0dd0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bfbe7b1a9f44e94489c0490811b894fcc74d8362202e8f2ccf4a8c2ecca63426",
+				"dweb:/ipfs/QmZyNhacF4B4WC8r1mDKyWuzjdVsWgA6RmYt31yoxAPsNY"
+			]
+		}
+	},
+	"version": 1
+}
